@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import loginImg from "../assests/img/login4.png";
 import finalLogo from "../assests/img/finalYodrlogo.png";
+import { text } from "stream/consumers";
 
 const LoginComponent: React.FC = () => {
   const [loginWith, setLoginWith] = useState<"email" | "mobile">("email");
@@ -64,36 +65,31 @@ const LoginComponent: React.FC = () => {
           </div>
 
           <div className="md:max-w-md w-full mx-auto">
-            <div className="flex flex-col justify-center items-center mb-6">
+            <div className="flex flex-col justify-center items-center">
               <img src={finalLogo} className="h-[90px] w-[120px] animate__animated animate__heartBeat animate__delay-2s" />
-              <p>Welcome Back</p>
-              <p>Please login.</p>
+              <p className="font-semibold">Welcome Back</p>
+              <p className=" mb-6">To keep connected with us</p>
+              <p className="font-s">please log in with your personal information by email address and password.</p>
             </div>
-            <div className="grid gap-2 sm:grid-cols-2 mb-12">
-              <button
-                type="button"
-                className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
-                onClick={() => handelLoginType("form1")}
-              >
-                Sign in1
+
+            <div className="grid gap-2 sm:grid-cols-2 mb-8">
+              <button type="button" className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
+                onClick={() => handelLoginType("form1")}>
+                Login With Email ID
               </button>
-              <button
-                type="button"
-                className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
-                onClick={() => handelLoginType("form2")}
-              >
-                Sign in2
+
+              <button type="button" className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
+                onClick={() => handelLoginType("form2")}>
+                Login With Mobile No.
               </button>
             </div>
+
             {activeForm === "form1" && (
               <form>
                 <div>
                   <form className="max-w-sm mx-auto" />
                   <label className="sr-only">Underline select</label>
-                  <select
-                    id="underline_select"
-                    className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
-                  >
+                  <select id="underline_select" className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
                     <option selected>Choose a Option</option>
                     <option value="CL">Clinic</option>
                     <option value="DO">Doctor</option>
@@ -102,25 +98,17 @@ const LoginComponent: React.FC = () => {
                 </div>
                 <div className="mt-8">
                   <div className="relative flex items-center">
-                    <input
-                      name="email"
-                      type="text"
-                      required
+                    <input name="email" type="text" required 
                       className="w-full text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
-                      placeholder="Enter email"
-                    />
+                      placeholder="Enter email"/>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <div className="relative flex items-center">
-                    <input
-                      name="password"
-                      type="password"
-                      required
+                    <input name="password" type="password" required
                       className="w-full text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
-                      placeholder="Enter password"
-                    />
+                      placeholder="Enter password"/>
                   </div>
                 </div>
 
@@ -129,25 +117,23 @@ const LoginComponent: React.FC = () => {
                     <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
                     <label className="text-gray-800 ml-3 block text-sm">Remember me</label>
                   </div>
-                  <div>
-                    <a href="jajvascript:void(0);" className="text-blue-600 font-semibold text-sm hover:underline">
-                      Forgot Password?
-                    </a>
-                  </div>
+                  <div><a href="jajvascript:void(0);" className="text-blue-600 font-semibold text-sm hover:underline">Forgot Password?</a></div>
                 </div>
 
                 <div className="mt-12">
-                  <button
-                    type="button"
-                    className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
-                  >
+                  <button type="button"
+                    className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none">
                     Sign in
                   </button>
                   <p className="text-gray-800 text-sm text-center mt-6">
                     Don't have an account{" "}
                     <a href="javascript:void(0);" className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap">
-                      Register here
-                    </a>
+                      Register here</a>
+                  </p>
+                  <p className="text-gray-800 text-sm text-center">
+                  Developed By{" "}
+                    <a href="https://yobytech.com" target="_blank" className="text-red-600 font-semibold hover:underline ml-1 whitespace-nowrap">
+                      YOBYTECH</a>
                   </p>
                 </div>
               </form>
@@ -203,6 +189,11 @@ const LoginComponent: React.FC = () => {
                     <a href="javascript:void(0);" className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap">
                       Register here
                     </a>
+                  </p>
+                  <p className="text-gray-800 text-sm text-center">
+                  Developed By{" "}
+                    <a href="https://yobytech.com" target="_blank" className="text-red-600 font-semibold hover:underline ml-1 whitespace-nowrap">
+                      YOBYTECH</a>
                   </p>
                 </div>
               </form>
