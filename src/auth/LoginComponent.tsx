@@ -51,6 +51,7 @@ const LoginComponent: React.FC = () => {
   const handleVerifyVerificationCode = () => {
     // Logic to verify code
   };
+
   return (
     <div className="font-[sans-serif] bg-white flex items-center justify-center md:h-screen p-4">
       <div className="shadow-[0_2px_16px_-3px_rgba(6,81,237,0.3)] max-w-6xl max-md:max-w-lg rounded-md p-6">
@@ -163,55 +164,37 @@ const LoginComponent: React.FC = () => {
               
               <form>
                 <div>
+                <label className="sr-only">Underline select</label>
+                  <select id="underline_select"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                    <option selected>Choose a Option</option>
+                    <option value="CL">Clinic</option>
+                    <option value="DO">Doctor</option>
+                    <option value="STF">Staff</option>
+                  </select>
+                </div>
+                <div className="mt-8">
                   <div className="relative flex items-center">
-                    <input
-                      name="email"
-                      type="text"
-                      required
+                    <input name="mobile" type="number" required
                       className="w-full text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
-                      placeholder="Enter email"
-                    />
+                      placeholder="Enter Mobile No."/>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <div className="relative flex items-center">
-                    <input
-                      name="password"
-                      type="password"
-                      required
+                    <input name="OTP" type="password" required
                       className="w-full text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
-                      placeholder="Enter password"
-                    />
+                      placeholder="Enter OTP"/>
                   </div>
                 </div>
-
-                <div className="flex flex-wrap items-center justify-between gap-4 mt-6">
-                  <div className="flex items-center">
-                    <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
-                    <label className="text-gray-800 ml-3 block text-sm">Remember me</label>
-                  </div>
-                  <div>
-                    <a href="jajvascript:void(0);" className="text-blue-600 font-semibold text-sm hover:underline">
-                      Forgot Password?
-                    </a>
-                  </div>
-                </div>
-
                 <div className="mt-12">
-                  <button
-                    type="button"
-                    className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-orange-600 hover:bg-orange-600 focus:outline-none"
-                  >
+                  <button type="button"
+                    className="w-full shadow-xl py-2.5 px-5 text-sm font-semibold rounded-md text-white bg-orange-600 hover:bg-orange-600 focus:outline-none">
                     Sign in
                   </button>
+                  
                   <p className="text-gray-800 text-sm text-center mt-6">
-                    Don't have an account{" "}
-                    <a href="javascript:void(0);" className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap">
-                      Register here
-                    </a>
-                  </p>
-                  <p className="text-gray-800 text-sm text-center">
                     Developed By{" "}
                     <a href="https://yobytech.com" target="_blank" className="text-red-600 font-semibold hover:underline ml-1 whitespace-nowrap">
                       YOBYTECH
