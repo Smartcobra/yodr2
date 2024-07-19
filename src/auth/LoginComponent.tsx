@@ -160,6 +160,7 @@ const LoginComponent: React.FC = () => {
             )}
 
             {activeForm === "form2" && (
+              
               <form>
                 <div>
                   <div className="relative flex items-center">
