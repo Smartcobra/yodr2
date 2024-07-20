@@ -330,8 +330,8 @@ const Dashboard = () => {
                         </div>
                         
                         <div id="grid" className="md:flex justify-center mx-auto mt-5">
-                            <div className="xl:w-1/3 lg:w-1/3 md:w-1/2 p-3 picture-item">    
-                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800 p-6">
+                            <div className="xl:w-1/3 lg:w-1/3 md:w-1/2 p-3 picture-item">   
+                                <div className="violet rounded-lg shadow-z dark:shadow-gray-800 p-6">
                                     <div className="flex items-center border-gray-100 dark:border-gray-800">
                                         <img src="assets/images/client/05.jpg" className="h-16 w-16 shadow dark:shadow-gray-800" alt=""></img>
         
@@ -346,7 +346,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
                             <div className="xl:w-1/3 lg:w-1/3 md:w-1/2 p-3 picture-item">    
-                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800 p-6">
+                                <div className="orange rounded-lg shadow-z dark:shadow-gray-800 p-6">
                                     <div className="flex items-center border-gray-100 dark:border-gray-800">
                                         <img src="assets/images/client/05.jpg" className="h-16 w-16 shadow dark:shadow-gray-800" alt=""></img>
         
@@ -361,7 +361,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
                             <div className="xl:w-1/3 lg:w-1/3 md:w-1/2 p-3 picture-item">    
-                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800 p-6">
+                                <div className="sky-blue rounded-lg shadow-z dark:shadow-gray-800 p-6">
                                     <div className="flex items-center border-gray-100 dark:border-gray-800">
                                         <img src="assets/images/client/05.jpg" className="h-16 w-16 shadow dark:shadow-gray-800" alt=""></img>
         

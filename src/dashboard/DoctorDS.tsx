@@ -13,97 +13,26 @@ const DoctorDS = () => {
                     </div>
         
                     <ul className="sidebar-menu border-t border-white/10" data-simplebar >
+
+                        <li>
+                            <a href="explore-property.html"><i className="mdi  mdi-home-city me-2"></i>Yobytech</a>
+                        </li>
+
                         <li>
                             <a href="/"><i className="mdi mdi-chart-bell-curve-cumulative me-2"></i>Dashboard</a>
                         </li>
 
-                        <li>
-                            <a href="explore-property.html"><i className="mdi mdi-home-city me-2"></i>Explore Properties</a>
-                        </li>
-
-                        <li>
-                            <a href="favorite-property.html"><i className="mdi mdi-home-heart me-2"></i>Favorite Properties</a>
-                        </li>
-
-                        <li>
-                            <a href="add-property.html"><i className="mdi mdi-home-plus me-2"></i>Add Properties</a>
-                        </li>
-
-                        <li>
-                            <a href="chat.html"><i className="mdi mdi-chat-outline me-2"></i>Chat</a>
-                        </li>
-
-                        <li className="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i className="mdi mdi-account-edit me-2"></i>User Profile</a>
-                            <div className="sidebar-submenu">
-                                <ul>
-                                    <li><a href="profile.html">Profile</a></li>
-                                    <li><a href="profile-setting.html">Profile Settings</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li className="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i className="mdi mdi-post-outline me-2"></i>Blog</a>
-                            <div className="sidebar-submenu">
-                                <ul>
-                                    <li><a href="blog.html">Blogs</a></li>
-                                    <li><a href="blog-detail.html">Blog Detail</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li className="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i className="mdi mdi-file-document-outline me-2"></i>Pages</a>
-                            <div className="sidebar-submenu">
-                                <ul>
-                                    <li><a href="starter.html">Starter</a></li>
-                                    <li><a href="faqs.html">FAQs</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="review.html">Review</a></li>
-                                    <li><a href="privacy.html">Privacy Policy</a></li>
-                                    <li><a href="terms.html">Term & Condition</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li className="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i className="mdi mdi-login me-2"></i>Authentication</a>
-                            <div className="sidebar-submenu">
-                                <ul>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="signup.html">Signup</a></li>
-                                    <li><a href="signup-success.html">Signup Success</a></li>
-                                    <li><a href="reset-password.html">Reset Password</a></li>
-                                    <li><a href="lock-screen.html">Lockscreen</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li className="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i className="mdi mdi-layers me-2"></i>Miscellaneous</a>
-                            <div className="sidebar-submenu">
-                                <ul>
-                                    <li><a href="comingsoon.html">Comingsoon</a></li>
-                                    <li><a href="maintenance.html">Maintenance</a></li>
-                                    <li><a href="error.html">Error</a></li>
-                                    <li><a href="thankyou.html">Thank You</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-
                         <li className="relative lg:m-8 m-6 px-8 py-10 rounded-lg bg-gradient-to-b to-transparent from-slate-800 text-center">
-                        <div className="sidebar-brand">
-                            <a href="/"><img src="assets/images/logo.png" className="h-12" alt=""></img></a>
-                        </div>
+                            <div className="sidebar-brand">
+                                <a href="/"><img src="assets/images/logo.png" className="h-12" alt=""></img></a>
+                            </div>
                             <span className="relative z-10">
                                 <span className="text-xl font-medium h5 text-white">Rudra Clinic</span>
-                                <span className="text-slate-400 mt-3 mb-5 block">Clinic Owner</span>
+                                <span className="text-slate-400 mb-5 block">Clinic Owner</span>
                             </span>
-                
                             <span className="mdi mdi-home-city-outline text-[160px] absolute top-1/2 -translate-y-1/2 start-0 end-0 mx-auto text-center opacity-[0.02] text-white z-0"></span>
                         </li>
+
                     </ul>
                     {/* <!-- sidebar-menu  --> */}
                 </div>
@@ -296,85 +225,88 @@ const DoctorDS = () => {
                                 <li className="inline-block capitalize text-[16px] font-medium text-green-600 dark:text-white" aria-current="page">18-Jul-2024 | 06:25PM </li>
                             </ul>
                         </div>
-                        <p>Welcome Rudra Clinic!</p>
+                        <p>Welcome <span className="font-semibold">Rudra Clinic</span>!</p>
                         <p>Your clinic dashboard awaits. Seamlessly manage, monitor, and maximize the potential of every clinic under your purview.</p>
                         
                         <div id="grid" className="md:flex justify-center mx-auto mt-5">
-                            <div className="xl:w-1/3 lg:w-1/3 md:w-1/2 p-3 picture-item">    
-                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800 p-6">
-                                    <div className="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
-                                        <img src="assets/images/client/05.jpg" className="h-16 w-16 rounded-full shadow dark:shadow-gray-800" alt=""></img>
-        
-                                        <div className="ps-4">
-                                            <div className="text-center">
-                                                <a href="#" className="text-lg hover:text-green-600 font-semibold duration-500 ease-in-out">Rudra Clinic</a>
+                            <div className="xl:w-1/3 lg:w-1/3 md:w-1/2 p-3 picture-item">  
+                                <div className="shadow-z">
+                                    <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800 p-6">
+                                        <div className="flex items-center pb-6 border-b border-gray-100 dark:border-gray-800">
+                                            <img src="assets/images/client/05.jpg" className="h-16 w-16 rounded-full shadow dark:shadow-gray-800" alt=""></img>
+            
+                                            <div className="ps-4">
+                                                <div className="text-center">
+                                                    <a href="#" className="text-lg hover:text-green-600 font-semibold duration-500 ease-in-out">Rudra Clinic</a>
+                                                </div>
+                                                <p className="text-slate-400 text-1xl">PALASUNI, BHUBANESWAR, KHURDA, ODISHA, INDIA-754001</p>
                                             </div>
-                                            <p className="text-slate-400 text-1xl">PALASUNI, BHUBANESWAR, KHURDA, ODISHA, INDIA-754001</p>
                                         </div>
-                                    </div>
-        
-                                    <div className="md:flex">
-                                        <div className="md:flex justify-center mx-auto">
-                                            <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
-                                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800">
-                                                    <div className="flex items-center border-b p-3 border-gray-100 dark:border-gray-800">
-                                                        <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
-                                                        <div className="ps-4">
-                                                            {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
-                                                            <p className="text-slate-400 text-1xl">No. Of Doctors 03</p>
+            
+                                        <div className="md:flex">
+                                            <div className="md:flex justify-center mx-auto">
+                                                <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
+                                                    <div className="sky-blue rounded-lg shadow dark:shadow-gray-800">
+                                                        <div className="flex items-center p-3 border-gray-100 dark:border-gray-800">
+                                                            <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
+                                                            <div className="ps-4 text-center">
+                                                                {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
+                                                                <p className="text-1xl">No. Of Doctors 03</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="md:flex justify-center mx-auto">
+                                                <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
+                                                    <div className="orange rounded-lg shadow dark:shadow-gray-800">
+                                                        <div className="flex items-center p-3 border-gray-100 dark:border-gray-800">
+                                                            <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
+                                                            <div className="ps-4 text-center">
+                                                                {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
+                                                                <p className="text-1xl">No. Of Patients 90</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="md:flex justify-center mx-auto">
-                                            <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
-                                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800">
-                                                    <div className="flex items-center border-b p-3 border-gray-100 dark:border-gray-800">
-                                                        <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
-                                                        <div className="ps-4">
-                                                            {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
-                                                            <p className="text-slate-400 text-1xl">No. Of Patients 90</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div className="md:flex">
-                                        <div className="md:flex justify-center mx-auto">
-                                            <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
-                                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800">
-                                                    <div className="flex items-center border-b p-3 border-gray-100 dark:border-gray-800">
-                                                        <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
-                                                        <div className="ps-4">
-                                                            {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
-                                                            <p className="text-slate-400 text-1xl">No. Of Doctors 03</p>
+                                        <div className="md:flex">
+                                            <div className="md:flex justify-center mx-auto">
+                                                <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
+                                                    <div className="yellow rounded-lg shadow dark:shadow-gray-800">
+                                                        <div className="flex items-center p-3 border-gray-100 dark:border-gray-800">
+                                                            <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
+                                                            <div className="ps-4 text-center">
+                                                                {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
+                                                                <p className="text-1xl">No. Of Doctors 03</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="md:flex justify-center mx-auto">
+                                                <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
+                                                    <div className="violet rounded-lg shadow dark:shadow-gray-800">
+                                                        <div className="flex items-center p-3 border-gray-100 dark:border-gray-800">
+                                                            <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
+                                                            <div className="ps-4 text-center">
+                                                                {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
+                                                                <p className=" text-1xl">No. Of Patients 90</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="md:flex justify-center mx-auto">
-                                            <div className="xl:w-1/1 lg:w-1/1 md:w-1/1 p-3 picture-item">    
-                                                <div className="bg-white dark:bg-slate-900 rounded-lg shadow dark:shadow-gray-800">
-                                                    <div className="flex items-center border-b p-3 border-gray-100 dark:border-gray-800">
-                                                        <img src="assets/images/client/05.jpg" className="h-8 w-8 rounded-full shadow dark:shadow-gray-800" alt=""></img>
-                                                        <div className="ps-4">
-                                                            {/* <a href="#" className="text-lg hover:text-green-600 duration-500 ease-in-out">Rudra Clinic</a> */}
-                                                            <p className="text-slate-400 text-1xl">No. Of Patients 90</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div className="text-center">
+                                            <h1> CLICK HERE TO ENTER </h1>
                                         </div>
+                                    
                                     </div>
-                                    <div className="text-center">
-                                        <h1> CLICK HERE TO ENTER </h1>
-                                    </div>
-                                   
-                                </div>
+                                </div> 
+                                
                             </div>
                         </div>
                         {/* <!-- End Content --> */}
